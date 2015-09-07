@@ -4,7 +4,7 @@ This repository serves the purpose of being the solution to an exercise. The tas
  a basic interactive website that plots stock closing prices, 
 adjusted closing prices, and volume for August 2015. 
 
-The data are dynamically accessed at from https://www.quandl.com/data/WIKI.
+The data are dynamically accessed at https://www.quandl.com/data/WIKI.
 
 Below find the original exercise. Start with forking https://github.com/thedataincubator/flask-demo.
 ---
