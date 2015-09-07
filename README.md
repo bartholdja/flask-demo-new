@@ -1,11 +1,10 @@
 # Flask on Heroku
 
-This repository serves the purpose of being the solution to an exercise that 
-comprised of building a basic interactive website that plots stock closing prices, 
+This repository serves the purpose of being the solution to an exercise. The task was to build
+ a basic interactive website that plots stock closing prices, 
 adjusted closing prices, and volume for August 2015. 
 
-The data come from quandl.com.
-
+The data are dynamically accessed at from https://www.quandl.com/data/WIKI.
 
 Below find the original exercise. Start with forking https://github.com/thedataincubator/flask-demo.
 ---
