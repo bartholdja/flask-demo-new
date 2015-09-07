@@ -1,8 +1,10 @@
 from flask import Flask,render_template, redirect, request
+import bokeh
 from bokeh.charts import TimeSeries, output_file, show
 import requests as requests
 import pandas as pd
 import simplejson as json
+
 
 app = Flask(__name__)
 
