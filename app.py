@@ -1,5 +1,4 @@
 from flask import Flask,render_template, redirect, request
-import bokeh
 from bokeh.charts import TimeSeries, output_file, show
 import requests as requests
 import pandas as pd
@@ -41,4 +40,4 @@ def index():
 
 		return show(p)
 if __name__ == "__main__":
-    app.run(port=33507, debug=True)
+    app.run(host='0.0.0.0', debug=True)
