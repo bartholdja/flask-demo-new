@@ -1,6 +1,6 @@
 from flask import Flask,render_template, redirect, request
 from bokeh.charts import TimeSeries, output_file, show
-from bokeh.plotting import figure
+from bokeh.plotting import figure, output_server("line")
 import requests as requests
 import pandas as pd
 import simplejson as json
