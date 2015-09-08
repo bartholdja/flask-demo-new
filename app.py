@@ -38,7 +38,7 @@ def index():
 		p.line(x, y, legend="Temp.", line_width=2)
 
 		# show the results
-		return x
+		return show(p)
 		#r = requests.get(url)
 		#dat1 = json.loads(r.text)
 		#df = pd.DataFrame(dat1['dataset']['data'], columns=dat1['dataset']['column_names'])
@@ -54,6 +54,5 @@ def index():
 	#	p = TimeSeries(df[str(app.vars['feature'])], df['Date'], title=str(app.vars['ticker']), ylabel=ylab)
 
 	#	return show(p)
-	#	return url
 if __name__ == '__main__':
-    app.run(port=int(os.environ.get("Port", 5000)), host='0.0.0.0', debug=False)
+    app.run(debug=True)
