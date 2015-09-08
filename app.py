@@ -24,8 +24,7 @@ def index():
 		
 		url = 'https://www.quandl.com/api/v3/datasets/WIKI/' + str(app.vars['ticker']) + '.json?order=asc&rows=31&start_date=2015-08-01&end_date=2015-08-31'
 		r = requests.get(url)
-		dat = r.text
-		dat1 = json.loads(dat)
+		dat1 = json.loads(r.text)
 		df = pd.DataFrame(dat1['dataset']['data'], columns=dat1['dataset']['column_names'])
 		df['Date'] = pd.to_datetime(df['Date'])
 
@@ -39,5 +38,5 @@ def index():
 		p = TimeSeries(df[str(app.vars['feature'])], df['Date'], title=str(app.vars['ticker']), ylabel=ylab)
 
 		return show(p)
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True)
+if __name__ == '__main__':
+    app.run(port=int(os.environ.get("Port", 5000)), host='0.0.0.0', debug=False)
