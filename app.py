@@ -29,7 +29,8 @@ def index():
 		y = [6, 7, 8, 9, 10]
 
 		# output to static HTML file
-		output_file("lines.html", title="line plot example")
+		#output_file("lines.html", title="line plot example")
+		output_server("line")
 
 		# create a new plot with a title and axis labels
 		p = figure(title="simple line example", x_axis_label='x', y_axis_label='y')
