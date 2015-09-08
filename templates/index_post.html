@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>FB data</title>
+		<link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.9.2.min.css" type="text/css" />
+		<script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-0.9.2.min.js"></script>	
+		<script type="text/javascript">
+
+	</head>
+	<body>
+		<dif id ="plot">
+    		{{ plot_resources|indent(4)|safe }}
+
+        	{{ plot_script|indent(4)|safe }}
+		
+		<div>
+			<h1>Generated graph for FB<br><a href="/index">Back</a></h1>
+		</div>
+		    </form>
+    {{ plot_div|indent(4)|safe }}
+	</body>
+</html>
