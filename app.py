@@ -1,6 +1,5 @@
 from flask import Flask,render_template, render_template, redirect, request
 from bokeh.charts import TimeSeries
-from bokeh.plotting import figure
 from bokeh.embed import components
 from bokeh.resources import INLINE
 from bokeh.templates import RESOURCES
@@ -40,6 +39,7 @@ def index():
 			ylab = "Adjusted closing price"
 		if app.vars['feature'] == 'Volume':
 			ylab = "Volume"
+
 		fig = TimeSeries(df[str(app.vars['feature'])], df['Date'], title=str(app.vars['ticker']), ylabel=ylab)
 		
       	resources = RESOURCES.render(
@@ -55,6 +55,6 @@ def index():
 		plot_script=script, plot_div=div, plot_resources=resources)
 	return encode_utf8(html)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(port=33507,debug=True)
 	
