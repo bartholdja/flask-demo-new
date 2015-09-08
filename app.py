@@ -38,7 +38,7 @@ def index():
 		p.line(x, y, legend="Temp.", line_width=2)
 
 		# show the results
-		show(p)	
+		return x
 		#r = requests.get(url)
 		#dat1 = json.loads(r.text)
 		#df = pd.DataFrame(dat1['dataset']['data'], columns=dat1['dataset']['column_names'])
