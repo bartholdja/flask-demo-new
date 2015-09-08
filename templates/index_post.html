@@ -1,4 +1,5 @@
 <!doctype html>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -15,7 +16,6 @@
         	{{ plot_script|indent(4)|safe }}
 		
 		<div>
-			<h1>Generated graph for FB<br><a href="/index">Back</a></h1>
 		</div>
 		    </form>
     {{ plot_div|indent(4)|safe }}
