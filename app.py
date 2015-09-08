@@ -40,7 +40,7 @@ def index():
 		if app.vars['feature'] == 'Volume':
 			ylab = "Volume"
 
-		fig = TimeSeries(df[str(app.vars['feature'])], df['Date'], title=str(app.vars['ticker']), ylabel=ylab)
+		fig = TimeSeries(df[str(app.vars['feature'])], df['Date'], title=str(app.vars['ticker'])+ " August 2015", ylabel=ylab)
 		
       	resources = RESOURCES.render(
         js_raw=INLINE.js_raw,
