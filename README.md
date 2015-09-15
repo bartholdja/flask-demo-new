@@ -6,7 +6,7 @@ adjusted closing prices, and volume for August 2015.
 
 The data are dynamically accessed at https://www.quandl.com/data/WIKI.
 
-Find the working app at spynx.heroku.app.
+Find the working app at https://spynx.heroku.com.
 
 Below find the original exercise. Start with forking https://github.com/thedataincubator/flask-demo.
 ---
